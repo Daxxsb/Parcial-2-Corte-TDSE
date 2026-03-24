@@ -13,7 +13,7 @@ Una vez entendido el contexto, renombre la clase correspondiente a Main para que
 - SearchController.java
 - ProxyController.java
 
-Seguido, cree el record encargado de definir el "Modelo de Datos":
+Seguido, cree el record encargado para los resultados de búsqueda:
 
 - SearchResult.java
 
