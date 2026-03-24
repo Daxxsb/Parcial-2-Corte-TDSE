@@ -38,3 +38,29 @@ Seguido, cree el record encargado para los resultados de búsqueda:
     ![alt text](img/4.png)
     ![alt text](img/5.png)
     En las imagenes se evidencia el resultado esperado para los parametros indicados, en el formato comentado en el enunciado.
+
+## Configuración y Despliegue
+
+1. Entramos AWS EC2 al apartado de instancias
+    ![alt text](img/6.png)
+
+2. La idea principal es crear dos instancias para los servicios matemáticos y una para PROXY, esto de acuerdo a la arquitectura sugerida
+    ![alt text](img/7.png)
+    Debemos crear un grupo de reglas de seguridad en donde habilitamos la conexión HTTP, con los parametros indicados en la imagen
+    ![alt text](img/8.png)
+    Lanzamos la instancia
+    ![alt text](img/9.png)
+    Ahora nos conectamos por ssh y empezamos con la configuración de la instancia
+    ![alt text](img/10.png)
+    Actualizamos e instalamos la versión trabajada de Java
+    ![alt text](img/11.png)
+    ![alt text](img/12.png)
+    Hacemos lo mismo con la otra instancia
+    ![alt text](img/13.png)
+    Después cargamos el .jar en ambas instancias
+    ![alt text](img/14.png)
+    Hacemos exactamente lo mismo con la tercera destinada al PROXY
+    ![alt text](img/15.png)
+
+3. Validamos que las tres instancias esten corriendo
+    ![alt text](img/16.png)
