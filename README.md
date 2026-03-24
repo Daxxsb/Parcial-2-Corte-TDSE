@@ -1,0 +1,39 @@
+# Parcial TDSE Segundo Corte
+
+## Análisis
+
+Después de entender el enunciado, empece con el scalffolding de la aplicación principal, esta llamada parcialtdse, se enfocara en la gestión e implementación de las funciones matemáticas solicitadas:
+
+- Búsqueda Lineal
+- Búsqueda Binaria
+
+Una vez entendido el contexto, renombre la clase correspondiente a Main para que fuera consistente con el nombre de la aplicación, después plantee dos controladores, uno para manejar los parametros de las funciones matemáticas y otro para integrar las requests Proxys. Los archivos correspondientes son:
+
+- SearchController.java
+- ProxyController.java
+
+Seguido, cree el record encargado de definir el "Modelo de Datos":
+
+- SearchResult.java
+
+## Resultados
+
+1. Lo primero validar la construcción y ejecución de la aplicación
+
+    ![alt text](img/1.png)
+
+2. Ahora entramos desde el navegador
+
+    ![alt text](img/2.png)
+
+3. Validamos PROXY
+
+    ![alt text](img/3.png)
+
+    Resultado esperado pues para este paso no hemos iniciado instancias
+
+4. Validamos por URL
+
+    ![alt text](img/4.png)
+    ![alt text](img/5.png)
+    En las imagenes se evidencia el resultado esperado para los parametros indicados, en el formato comentado en el enunciado.

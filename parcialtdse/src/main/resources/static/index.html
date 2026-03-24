@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Services</title>
+</head>
+<body>
+    <h1>Búsqueda Lineal</h1>
+    <label>Lista (separada por comas):</label><br>
+    <input type="text" id="linearLista" value="10,20,13,40,60"><br><br>
+    <label>Valor a buscar:</label><br>
+    <input type="text" id="linearValor" value="13"><br><br>
+    <button onclick="busquedaLineal()">Buscar</button>
+    <pre id="linearResult"></pre>
+
+    <hr>
+
+    <h1>Búsqueda Binaria</h1>
+    <label>Lista ordenada (separada por comas):</label><br>
+    <input type="text" id="binaryLista" value="10,20,30,40,60"><br><br>
+    <label>Valor a buscar:</label><br>
+    <input type="text" id="binaryValor" value="30"><br><br>
+    <button onclick="busquedaBinaria()">Buscar</button>
+    <pre id="binaryResult"></pre>
+
+    <script>
+        function busquedaLineal() {
+            const lista = document.getElementById("linearLista").value;
+            const valor = document.getElementById("linearValor").value;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("linearResult").innerHTML =
+                    JSON.stringify(JSON.parse(this.responseText), null, 2);
+            };
+            xhttp.open("GET", "/proxy/busquedaLineal?lista=" + lista + "&valor=" + valor);
+            xhttp.send();
+        }
+
+        function busquedaBinaria() {
+            const lista = document.getElementById("binaryLista").value;
+            const valor = document.getElementById("binaryValor").value;
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("binaryResult").innerHTML =
+                    JSON.stringify(JSON.parse(this.responseText), null, 2);
+            };
+            xhttp.open("GET", "/proxy/busquedaBinaria?lista=" + lista + "&valor=" + valor);
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>
