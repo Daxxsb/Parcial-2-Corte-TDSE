@@ -1,5 +1,5 @@
 # Parcial TDSE Segundo Corte
-David Eduardo Salamanca Aguilar - Escuela Colombiana de Ingeniería Julio Garavito
+David Eduardo Salamanca Aguilar - Escuela Colombiana de Ingeniería Julio Garavito - 2026-1
 
 ## Análisis
 
