@@ -64,3 +64,4 @@ Seguido, cree el record encargado para los resultados de búsqueda:
 
 3. Validamos que las tres instancias esten corriendo
     ![alt text](img/16.png)
+    ![alt text](img/17.png)
